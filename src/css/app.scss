@@ -1,0 +1,101 @@
+// app global css in SCSS form
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f5f5f9;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.header {
+  background-color: $white;
+  color: $dark;
+  padding: 0.6rem 10px;
+}
+
+.toolbar-title {
+  font-weight: 600;
+  font-size: large;
+}
+
+// Sidebar
+.sidebar {
+  padding: 10px 0.6rem;
+  background-color: $white;
+}
+
+.sidebar-logo-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-logo-container .sidebar-logo-description {
+  width: 200px;
+  text-align: center;
+  font-weight: 600;
+  font-size: medium;
+  line-height: normal;
+  color: $dark;
+}
+
+.sidebar-logo {
+  width: 70px;
+}
+
+.sidebar-logo img {
+  width: 100%;
+}
+
+.sidebar .q-item {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.sidebar .q-item.q-router-link--active,
+.q-item--active {
+  background-color: $primary;
+  color: $white;
+}
+
+.sidebar-dropdown .q-item {
+  margin-left: 10px;
+}
+
+.sidebar-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0px 10px;
+  font-size: small;
+  color: $dark;
+}
+
+// Menu Dropdown Avatar
+.container-avatar-menu-dropdown {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.avatar-menu-dropdown {
+  background-color: $white;
+  color: $dark;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-width: 200px;
+  gap: 10px 0px;
+  padding: 5px 0;
+}
+
+.avatar-menu-dropdown button {
+  border-radius: 10px;
+}
